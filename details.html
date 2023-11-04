@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="detailsStyle.css">
+</head>
+
+<body>
+    <h3 id="ipDiv">IP Address : <span id="ip"></span></h3>
+    <div class="ipInfo">
+        <div>
+            <h3>Lat : <span id="lat">fff</span></h3>
+            <h3>Long : <span id="lng"></span></h3>
+        </div>
+        <div>
+            <h3>City : <span id="city"></span></h3>
+            <h3>Region : <span id="region"></span></h3>
+        </div>
+        <div>
+            <h3>Organisation : <span id="organisation"></span></h3>
+            <h3>IP Version : <span id="hostname"></span></h3>
+        </div>
+    </div>
+    <div class="mapDiv">
+        <h2>Your Current Location</h2>
+        <div id="map"></div>
+    </div>
+    <h2>More Information About You</h2>
+    <div class="moreInfo">
+        <h3>Time Zone : <span id="timeZone"></span></h3>
+        <h3>Date and Time : <span id="dateTime"></span></h3>
+        <h3>Pincode : <span id="pincode"></span></h3>
+        <h3>Message : <span id="message"></span></h3>
+    </div>
+    <h2>Post Offices Near You</h2>
+    <div class="searchBar">
+        <img src="./assets/search.svg" alt="">
+        <input type="text" id="searchInput" placeholder="Search something...">
+    </div>
+    <div id="postOfficeContainer">
+        
+    </div>
+    <script src="details.js"></script>
+</body>
+
+</html>

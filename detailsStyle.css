@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Inter:wght@200;300;400;500;600;700&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;600&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: rgba(184, 188, 204, 0.50);
+    font-family: Montserrat;
+}
+
+#ipDiv {
+    margin: 1rem;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.ipInfo {
+    display: flex;
+    width: 90%;
+    margin-inline: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.moreInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+    margin-inline: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.moreInfo h3 span {
+    color: #B8BCCC;
+}
+.ipInfo div {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ipInfo div span,
+#ip {
+    color: #B8BCCC;
+}
+
+h2 {
+    text-align: center;
+    color: #BBBCCC;
+    margin-block: 1rem;
+}
+
+.mapDiv {
+    width: 100%;
+    height: 34rem;
+    background: #575A85;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-block: 3rem;
+}
+
+.mapDiv h2 {
+    color: #B8BCCC;
+    text-align: center;
+}
+
+#map {
+    width: 100%;
+    height: 95%;
+    background-color: white;
+}
+
+#postOfficeContainer {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+    justify-content: space-between;
+    padding-block: 2rem;
+}
+
+.postOfficeCard {
+    width: 30%;
+    border-radius: 10px;
+    background: #575A85;
+    padding: 1rem 1.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.postOfficeCard span {
+    color: rgba(184, 188, 204, 0.925);
+}
+
+.searchBar {
+    width: 100%;
+    width: 90%;
+    margin-inline: auto;
+    padding: 10px 10px;
+    display: flex;
+    border-radius: 10px;
+    border: 3px solid #575A85;
+    margin-bottom: 1rem;
+}
+.searchBar img {
+    height: 1.3rem;
+}
+#searchInput {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    margin-left: 0.8rem;
+}
+
+@media screen and (max-width:768px) {
+    .ipInfo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mapDiv {
+        padding: 15px 0;
+        gap: 15px;
+    }
+
+    #postOfficeContainer {
+        width: 95%;
+        padding: 1%;
+        justify-content: center;
+    }
+
+    .postOfficeCard {
+        width: 100%;
+        padding: 1rem;
+    }
+}
